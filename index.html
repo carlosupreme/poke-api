@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Pokemons</title>
+ <style>
+  body {
+   max-width: 1000px;
+   margin: auto;
+  }
+  .links{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+  }
+  .loader {
+   display: block;
+   margin: auto;
+  }
+
+  .grid-fluid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   text-align: center;
+   font-family: sans-serif;
+   text-transform: capitalize;
+   letter-spacing: 0.2em;
+  }
+
+  .grid-fluid figure {
+   box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+ </style>
+</head>
+
+<body>
+ <h1>Pokemones</h1>
+ <nav class="links"></nav>
+ <main class="grid-fluid"></main>
+ <script src="index.js"></script>
+</body>
+
+</html>
